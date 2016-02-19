@@ -23,7 +23,7 @@ public class TestMessageRu {
     public static String formatUTF(String str) {
         String newStr = null;
         try {
-            newStr = new String(str.getBytes(), "windows-1251");
+            newStr = new String(str.getBytes(), "UTF-8");
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
