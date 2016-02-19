@@ -33,7 +33,7 @@ public class HelloWorld {
 
     public static String getMessage(Date date, Locale locale){
 
-        return getMessage(date, ResourceBundle.getBundle("resources.Message", locale));
+        return getMessage(date, ResourceBundle.getBundle("Message", locale));
     }
 
     public static String getMessage(Date date, ResourceBundle resourceBundle){
