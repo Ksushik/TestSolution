@@ -20,15 +20,6 @@ public class TestMessageRu {
         Locale.setDefault(new Locale("RU"));
     }
 
-    public static String formatUTF(String str) {
-        String newStr = null;
-        try {
-            newStr = new String(str.getBytes(), "UTF-8");
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
-        return newStr;
-    }
 
     @Test
     public void test1(){
