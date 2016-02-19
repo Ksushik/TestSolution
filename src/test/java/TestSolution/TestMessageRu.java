@@ -32,7 +32,7 @@ public class TestMessageRu {
 
     @Test
     public void test1(){
-        assertEquals("Вывод не корректный",formatUTF( "Добрый вечер, Мир!"), HelloWorld.getMessage(21));
+        assertEquals("Вывод не корректный","Добрый вечер, Мир!", HelloWorld.getMessage(21));
     }
 
     @Test
