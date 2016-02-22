@@ -31,7 +31,7 @@ public class HelloWorld {
         return formatUTF(resourceBundle.getString(getTimeOfDay(hours)));
     }
 
-    public static int getHours(Date date){
+    private static int getHours(Date date){
         return Integer.parseInt(new SimpleDateFormat("HH").format(date));
     }
 
@@ -42,7 +42,7 @@ public class HelloWorld {
         return "message4";
     }
 
-    public static String formatUTF(String str){
+    private static String formatUTF(String str){
         String newStr=null;
         try {
             newStr= new String(str.getBytes("ISO-8859-1"),"UTF-8");

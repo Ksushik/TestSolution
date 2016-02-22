@@ -6,6 +6,7 @@ import org.junit.Test;
 
 import java.util.Locale;
 
+import static TestSolution.HelloWorld.*;
 import static org.junit.Assert.assertEquals;
 
 /**
@@ -29,26 +30,27 @@ public class TestMessage {
     public void test1(){
         Locale.setDefault(Locale.ENGLISH);
 
-        check("Good morning, World!", HelloWorld.getMessage(8));
+        check("Good morning, World!", getMessage(8));
 
-        check("Good day, World!", HelloWorld.getMessage(13));
+        check("Good day, World!", getMessage(13));
 
-        check("Good evening, World!", HelloWorld.getMessage(21));
+        check("Good evening, World!", getMessage(21));
 
-        check("Good night, World!", HelloWorld.getMessage(0));
+        check("Good night, World!", getMessage(0));
+
     }
 
     @Test
     public void test2(){
         Locale.setDefault(new Locale("RU"));
 
-        check("Добрый вечер, Мир!", HelloWorld.getMessage(21));
+        check("Добрый вечер, Мир!", getMessage(21));
 
-        check("Доброе утро, Мир!", HelloWorld.getMessage(7));
+        check("Доброе утро, Мир!", getMessage(7));
 
-        check("Добрый день, Мир!", HelloWorld.getMessage(14));
+        check("Добрый день, Мир!", getMessage(14));
 
-        check("Спокойной ночи, Мир!", HelloWorld.getMessage(1));
+        check("Спокойной ночи, Мир!", getMessage(1));
     }
 
     public  void check(String expectedMessage,String receivedMessage){
