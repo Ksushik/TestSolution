@@ -14,16 +14,7 @@ Good night, World! в 23:00 - 06:00
 
 Выводящиеся на консоль сообщения должны быть получены из message resource и зависеть от системной локали пользователя. Сделать перевод на русский язык.
 
-{<img src="https://travis-ci.org/OlegShevchuk/TestSolution.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/OlegShevchuk/TestSolution]
 
-https://travis-ci.org/OlegShevchuk/TestSolution.svg?branch=master
 
 [![Build Status](https://travis-ci.org/OlegShevchuk/TestSolution.svg?branch=master)](https://travis-ci.org/OlegShevchuk/TestSolution)
 
-!https://travis-ci.org/OlegShevchuk/TestSolution.svg?branch=master!:https://travis-ci.org/OlegShevchuk/TestSolution
-
-.. image:: https://travis-ci.org/OlegShevchuk/TestSolution.svg?branch=master
-    :target: https://travis-ci.org/OlegShevchuk/TestSolution
-
-
-=for HTML <a href="https://travis-ci.org/OlegShevchuk/TestSolution"><img src="https://travis-ci.org/OlegShevchuk/TestSolution.svg?branch=master"></a>
