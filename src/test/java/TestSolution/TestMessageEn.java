@@ -12,14 +12,19 @@ import static org.junit.Assert.assertEquals;
  * Created by Олег on 16.02.2016.
  */
 public class TestMessageEn {
-    private Locale localeDefault;
+    private static Locale localeDefault;
 
     @BeforeClass
-    public  void chengeLocalRU(){
+    public static void chengeLocalRU(){
         localeDefault=Locale.getDefault();
         Locale.setDefault(Locale.ENGLISH);
 
 
+    }
+
+    @AfterClass
+    public static void returnLocale(){
+        Locale.setDefault(localeDefault);
     }
 
     @Test
@@ -31,10 +36,5 @@ public class TestMessageEn {
         assertEquals("Вывод не корректный", "Good evening, World!", HelloWorld.getMessage(21));
 
         assertEquals("Вывод не корректный", "Good night, World!", HelloWorld.getMessage(0));
-    }
-
-    @AfterClass
-    public void returnLocale(){
-        Locale.setDefault(localeDefault);
     }
 }
