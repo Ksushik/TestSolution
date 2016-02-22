@@ -13,3 +13,5 @@ Good night, World! в 23:00 - 06:00
 Код должен содержать все возможные юнит-тесты и создавать читабельный лог файл.
 
 Выводящиеся на консоль сообщения должны быть получены из message resource и зависеть от системной локали пользователя. Сделать перевод на русский язык.
+
+{<img src="https://travis-ci.org/OlegShevchuk/TestSolution.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/OlegShevchuk/TestSolution]

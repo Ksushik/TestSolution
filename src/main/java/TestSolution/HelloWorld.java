@@ -27,22 +27,8 @@ public class HelloWorld {
         return getMessage(hours,  ResourceBundle.getBundle("Message", locale));
     }
 
-    public static String getMessage(Date date){
-        return getMessage(date, Locale.getDefault());
-    }
-
-    public static String getMessage(Date date, Locale locale){
-
-        return getMessage(date, ResourceBundle.getBundle("Message", locale));
-    }
-
-    public static String getMessage(Date date, ResourceBundle resourceBundle){
-        return getMessage(getHours(date), resourceBundle);
-    }
-
     public static int getHours(Date date){
         return Integer.parseInt(new SimpleDateFormat("HH").format(date));
-
     }
 
     private static String getMessage(int hours, ResourceBundle resourceBundle){
