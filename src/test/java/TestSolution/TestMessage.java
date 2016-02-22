@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by Олег on 16.02.2016.
  */
-public class TestMessageEn {
+public class TestMessage {
     private static Locale localeDefault;
 
     @BeforeClass
