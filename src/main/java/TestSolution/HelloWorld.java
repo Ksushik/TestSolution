@@ -27,12 +27,12 @@ public class HelloWorld {
         return getMessage(hours,  ResourceBundle.getBundle("Message", locale));
     }
 
-    public static int getHours(Date date){
-        return Integer.parseInt(new SimpleDateFormat("HH").format(date));
-    }
-
     private static String getMessage(int hours, ResourceBundle resourceBundle){
         return formatUTF(resourceBundle.getString(getTimeOfDay(hours)));
+    }
+
+    public static int getHours(Date date){
+        return Integer.parseInt(new SimpleDateFormat("HH").format(date));
     }
 
     private static String getTimeOfDay(int hours){
